@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/form.css">
+        <script src="../jQuery/jquery.min.js"></script>
+        <script src="../jQuery/jquery.validate.min.js"></script>
+        <script src="../jQuery/additional-methods.js"></script>
+        <script src="../jQuery/OLP.js"></script>
+    </head>
+    <body>
+      <div class="f">
+        <!--Details-->
+        
+        <br>
+        <br>
+        <h1>Customer Details:</h1>
+        
+        
+        <hr>
+        <form name="form" id="form" method="post" action="">
+            <div>
+                <p>Full Name
+                <span style="color: red;">*</span></p>
+            </div>
+
+            <!--Full Name-->
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="fname" name="firstname">
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lastname">
+                        
+                    </td>
+                    </tr>
+                <tr>
+                    <td>
+                        <label class="a" for="fname">First Name</label>
+                    </td>
+                    <td>
+                        <label class="a" for="fname">Last Name</label>
+                    </td>
+                </tr>
+            </table>
+                <br>
+
+            <!--Address-->
+            <p>Address
+            <span style="color: red;">*</span></p>
+
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="street1" name="street1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="a" for="street1">Street Address</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="street2" name="street2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="a" for="street2">Street Address Line 2</label>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="city" name="city">
+                    </td>
+                    <td>
+                        <input type="text" id="state" name="state">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="a" for="city">City</label>
+                    </td>
+                    <td>
+                        <label class="a" for="state">State / Province</label>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="code" name="code">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="a" for="code">Postal / Zip Code</label>
+                    </td>
+                </tr>
+            </table>
+            
+            <br>
+            <!--No. & mail-->
+            <table class="table1">
+                <tr>
+                    <td>
+                        <p>Phone No.<span style="color: red;">*</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="mno" placeholder="(000) 000-0000" name="mno">
+                    </td>
+                </tr>
+                        
+                <tr>
+                    <td>
+                        <p>E-mail<span style="color: red;">*</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" id="mail" name="mail" placeholder="ex:email@yahoo.com">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="a" for="mail">example@example.com</label><span id="ml1" class="span1"></span>
+                    </td>
+                </tr>
+            </table>
+            
+
+            <!--Select Menu-->
+            <p>How did you hear about us?</p>
+            
+                <select class="all" id="sel" name="sel">
+                    <option value="0">Please select</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Magazine">Magazine</option>
+                    <option value="Please specify">Others (Please specify)</option>
+                </select>
+            <br>
+
+            <!--Text area-->
+            <p>
+                Feedback about us :
+            </p>
+            <textarea class="all" id="area1" name="area1"></textarea>
+            <br>
+            <br>
+            <p>
+                Suggestions if any further improvement :
+            </p>
+            <textarea class="all" id="area2" name="area2"></textarea>
+            <br>
+            <br>
+
+            <!--Checkbox-->
+            <label class="container" for="container">Will you be recommend us?</label>
+            <input type="checkbox" id="container" name="container">
+            <br>
+
+            <br>
+            <!--Radio-->
+            <div class="radio-container"><p>Gender :
+                <input type="radio" id="male" value="male" class="gender" name="gender">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" value="female" class="gender" name="gender">
+                <label for="female">female</label>
+
+                <input type="radio" id="other" value="other" class="gender" name="gender">
+                <label for="other">other</label>
+            </p>
+            </div>
+            <br>
+
+            <!--Table-->
+            <p>Please give referance of any two people whom you feel:</p>
+           
+            <table class="last">
+                <tr>
+                    <td class="t3"></td>
+                    <td class="t1">Full name</td>
+                    <td class="t1">Address</td>
+                    <td class="t1">Contact Number</td>
+                </tr>
+                <tr>
+                    <td class="t1">1</td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                </tr>
+                <tr>
+                    <td class="t1">2</td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                </tr>
+            </table>
+        <hr>
+            <button class="button" type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="t">
+      <table  class="w3-table-all" id="myTable">
+        <thead>
+          <tr class="w3-blue">
+          <th nowrap>Sl.No</th>      
+          <th nowrap>First Name</th>      
+          <th nowrap>Last name</th>
+          <th nowrap>Street 1</th>
+          <th nowrap>Street 2</th>
+          <th nowrap>City</th>      
+          <th nowrap>State</th>      
+          <th nowrap>Zip code</th>
+          <th nowrap>Phone no</th>
+          <th nowrap>E-mail</th>
+          <th nowrap>About us select</th>      
+          <th nowrap>Feedback</th>      
+          <th nowrap>Suggestions</th>
+          <th nowrap>Recommend</th>
+          <th nowrap>Gender</th>
+          <th nowrap>Action</th>
+          </tr>
+          </thead>
+          <tbody >
+          </tbody>
+      </table></div>      
+    </body>
+</html>
